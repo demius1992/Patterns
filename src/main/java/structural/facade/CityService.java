@@ -1,12 +1,12 @@
 package structural.facade;
 
-// класс, отвечающий за проверку прав на строительство от городских служб
-class CityService
-{
-	public CityService() {}
-	
-	// есть ли у фирмы разрешение на строительство со города
-	public boolean HasCityAccess(Firm pFirm) {
-		return pFirm.GetCityLicense();
-	}
+// class in charge of checking building rights from city services
+class CityService {
+    public CityService() {
+    }
+
+    // does the company have a building permit from the city
+    public boolean HasCityAccess(Firm pFirm) {
+        return pFirm.GetCityLicense();
+    }
 }

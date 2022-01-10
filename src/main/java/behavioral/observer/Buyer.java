@@ -1,6 +1,6 @@
 package behavioral.observer;
 
-// Интерфейс потенциального покупателя
+//interface of potential customer
 interface Buyer {
-	void Update(Product p);
+    void Update(Product p);
 }

@@ -1,7 +1,8 @@
 package structural.facade;
-// Класс фирмы
+
+// Firm class
 class Firm {
-    // конструктора и деструктор
+    // constructor and destructor
     public Firm() {
         builderLicense = false;
         name = "";
@@ -14,16 +15,16 @@ class Firm {
         cityLicense = cLicense;
     }
 
-    // название фирмы
+    // company name
     private String name;
-    // есть ли строительная лицензия у фирмы
+    // does the company have a building license
     private boolean builderLicense;
-    // есть ли экологическое разрешение
+    // is there an environmental permit
     private boolean environmentalLicense;
-    // есть ли разрешение от города
+    // is there a permit from the city
     private boolean cityLicense;
 
-    // функции для работы с именем
+    // functions for working with name
     public String GetName() {
         return name;
     }
@@ -32,7 +33,7 @@ class Firm {
         name = fName;
     }
 
-    // функции для работы со строительной лицензии
+    // functions for working with a building license
     public boolean GetBuilderLicense() {
         return builderLicense;
     }
@@ -41,7 +42,7 @@ class Firm {
         builderLicense = bLicense;
     }
 
-    // функции для работы с экологическим разрешением
+    // functions for working with environmental permit
     public boolean GetEnvironmentalLicense() {
         return environmentalLicense;
     }
@@ -50,7 +51,7 @@ class Firm {
         environmentalLicense = eLicense;
     }
 
-    // функции для работы с городским разрешением
+    // functions for working with city permit
     public boolean GetCityLicense() {
         return cityLicense;
     }

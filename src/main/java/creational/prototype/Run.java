@@ -27,13 +27,15 @@ public class Run {
 
             // object creation
             Car c = new Car(brand, model, color, year);
-            System.out.println(c);;
+            System.out.println(c);
+            ;
 
             System.out.println("Let's clone!\nLet's creational.prototype! ");
 
             // object cloning
             Car copy = (Car) c.CloneIt();
-            System.out.println(copy);;
+            System.out.println(copy);
+            ;
         } catch (Exception ex) {
             System.out.println("Exception happened! Exception description " + ex.getMessage());
         }

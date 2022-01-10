@@ -1,7 +1,7 @@
 package structural.facade;
 
-// Класс Facade. Осуществляет комплексную проверку
-// на наличие всех лицензий и доступа у фирмы-строителя
+// Facade class. Carries out a comprehensive check
+// for the availability of all licenses and access from the construction company
 class Construction {
     private final EnvironmentalService eService;
     private final CityService cService;
@@ -15,6 +15,6 @@ class Construction {
 
     boolean IsAllowed(Firm pFirm) {
         System.out.println("\nLet's check for all permissions!\n");
-		return cService.HasCityAccess(pFirm) && coService.HasBuildingLicense(pFirm) && eService.HasEnvironmentalAccess(pFirm);
-	}
+        return cService.HasCityAccess(pFirm) && coService.HasBuildingLicense(pFirm) && eService.HasEnvironmentalAccess(pFirm);
+    }
 }

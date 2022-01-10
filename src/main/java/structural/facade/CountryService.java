@@ -1,12 +1,12 @@
 package structural.facade;
 
-// класс, отвечающий за проверку наличия лицензии на строительство у фирмы
-class CountryService
-{
-	public CountryService(){}
-	
-	// есть ли у фирмы лицензия на строительство со стороны страны
-	public boolean HasBuildingLicense(Firm pFirm) {
-		return pFirm.GetBuilderLicense();
-	}
+// the class responsible for checking the firm's building license
+class CountryService {
+    public CountryService() {
+    }
+
+    // does the company have a building license from the country
+    public boolean HasBuildingLicense(Firm pFirm) {
+        return pFirm.GetBuilderLicense();
+    }
 }
